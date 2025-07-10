@@ -16,11 +16,7 @@ if (!process.env.API_KEY) {
 }
 
 const app = express();
-app.use(cors({
-  origin: "https://cvanalysis-rho.vercel.app/",
-  methods: ["POST", "GET"],
-  credentials: true,
-}));
+app.use(cors());
 
 // Configure multer for file uploads
 const upload = multer({ dest: "uploads/" });
