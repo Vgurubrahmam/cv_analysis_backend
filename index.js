@@ -17,7 +17,7 @@ if (!process.env.API_KEY) {
 
 const app = express();
 app.use(cors({
-  origin: "https://cv-analysis-omega.vercel.app",
+  origin: "https://cvanalysis-rho.vercel.app/",
   methods: ["POST", "GET"],
   credentials: true,
 }));
